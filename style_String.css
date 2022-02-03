@@ -1,0 +1,57 @@
+#container{
+   
+   
+    height:95vh;
+    display:grid;
+    grid-template-rows: 1fr 2fr 11fr 4fr;
+    gap:20px;
+    width:70%;
+    margin:auto;
+}
+
+body {font-size:1.3em}
+input,button {font-size:1.1em}
+
+h3{text-align: center;}
+
+header{
+    text-align: center;
+    
+    display:grid;
+    grid-template-columns:  1fr 1fr ;
+    grid-template-areas: "champ1 champ2"
+                         "champ3 champ3";
+}
+
+.champ1{grid-area:champ1;text-align:left}
+.champ2{grid-area:champ2;text-align:right}
+.champ3{grid-area:champ3;text-align:left;position:relative;margin-bottom: 10px;}
+
+.champ3 input{
+    position:absolute;
+    width: 80%;
+    right:0px;
+}
+
+header,section,aside{
+    display:grid;
+    row-gap: 10px;
+    padding:10px;
+}
+
+section div, aside div{
+    display:grid;
+    gap:20px;
+    
+    grid-template-columns: 9fr 1fr 2fr ;
+    grid-template-areas: "label button input";
+}
+
+section label{grid-area:label;}
+section button{grid-area:button;}
+section input{grid-area:input;}
+
+header, section, aside{
+    border:2px solid black;
+}
+

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="JS_String.js"></script>
+    <link rel="stylesheet" href="style_String.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="container">
+      <h3>JavaScript : Utilisation de l'objet STRING</h3>
+      <header>
+        <div class="champ1">
+          <label>chaine 1 :</label><input type="text" value="jean" id="ch1" />
+        </div>
+        <div class="champ2">
+          <label>chaine 2 :</label><input type="text" value="  jeAn" id="ch2" />
+        </div>
+        <div class="champ3">
+          <label> Trame NMEA :</label
+          ><input
+            type="text"
+            value="$GAGGA, 074136.360, 3836.5176, N, 00620. 1353, E, 1, 04, 3.2, 125.1, M, , , , 0000*0E"
+            id="trame"
+          />
+        </div>
+      </header>
+      <section>
+        <div>
+          <label>Faire afficher le nombre de caractères de la chaine 1</label>
+          <button onclick="nbCarCh1()">Générer</button>
+          <input type="text" id="nbCarCh1" />
+        </div>
+        <div>
+          <label>Faire afficher le nombre de caractères de la chaine 2</label>
+          <button onclick="nbCarCh2()">Générer</button>
+          <input type="text" id="nbCarCh2" />
+        </div>
+        <div>
+          <label>Supprimer les espaces avant la chaine2 et afficher celle-ci </label>
+          <button onclick="supBlancCh2()">Générer</button>
+          <input type="text" id="supBlancCh2" />
+        </div>
+        <div>
+          <label>Convertir la chaine 2 en lettres minuscules et afficher celle-ci</label>
+          <button onclick="minusCh2()">Générer</button>
+          <input type="text" id="minusCh2" />
+        </div>
+        <div>
+          <label>Afficher la première lettre de la chaine 1 </label>
+          <button onclick="premLetCh1()">Générer</button>
+          <input type="text" id="premLetCh1" />
+        </div>
+
+        <div>
+          <label> Afficher la chaine 1 sans la première lettre</label>
+          <button onclick="ch1SansPremLet()">Générer</button>
+          <input type="text" id="ch1SansPremLet" />
+        </div>
+        <div>
+          <label> Afficher la chaine 2 sans la première lettre</label>
+          <button onclick="ch2SansPremLet()">Générer</button>
+          <input type="text" id="ch2SansPremLet" />
+        </div>
+
+        <div>
+          <label> Afficher la chaine 1 avec la premiere lettre en Majuscule</label>
+          <button onclick="premLetMajCh1()">Générer</button>
+          <input type="text" id="premLetMajCh1" />
+        </div>
+
+        <div>
+          <label>
+            Afficher la chaine 2 avec la premiere lettre en Majuscule et le reste en
+            minuscule</label
+          >
+          <button onclick="premLetMajCh2()">Générer</button>
+          <input type="text" id="premLetMajCh2" />
+        </div>
+
+        <div>
+          <label>
+            Afficher un prénom composé avec 1 majuscule pour chaque prénom et un trait d'union entre
+            les 2
+          </label>
+          <button onclick="prenomCompo()">Générer</button>
+          <input type="text" id="prenomCompo" />
+        </div>
+      </section>
+      <aside>
+        <div>
+          <label>Donner le nombre d'informations dans la trame ( longueur du tableau) </label>
+          <button onclick="nbInfoTrame()">Générer</button>
+          <input type="text" id="nbInfoTrame" />
+        </div>
+        <div>
+          <label> Indiquer le provenance de la trame (GPS ou Galiléo )</label>
+          <button onclick="provTrame()">Générer</button>
+          <input type="text" id="provTrame" />
+        </div>
+        <div>
+          <label> Indiquer l'heure de réception de la trame sous la forme HH:MM:SS </label>
+          <button onclick="heureRecep()">Générer</button>
+          <input type="text" id="heureRecep" />
+        </div>
+        <div>
+          <label> Donner la latitude sous la forme degrés, minutes, secondes </label>
+          <button onclick="latitude()">Générer</button>
+          <input type="text" id="latitude" />
+        </div>
+      </aside>
+    </div>
+  </body>
+</html>
